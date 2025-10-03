@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Block future admin and back-end pages
+Disallow: /admin/
+Disallow: /backend/
+Disallow: /dashboard/
+Disallow: /wp-admin/
+Disallow: /login/
+Disallow: /private/
+
+# Sitemap location
+Sitemap: https://tfs2006.github.io/careessentials-site/sitemap.xml
