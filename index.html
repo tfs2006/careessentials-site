@@ -3,69 +3,212 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Care Essentials – Fungus Treatment, Nail Fungus Remedy, Skincare Supplement | Beauty Wellness</title>
-  <meta name="description" content="Care Essentials: fungus treatment, nail fungus remedy, and skincare supplement for beauty wellness. High-demand beauty/skin vertical with strong affiliate performance." />
-  <meta name="keywords" content="fungus treatment, nail fungus remedy, skincare supplement, beauty wellness, Care Essentials" />
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Care Essentials – Fungus Treatment & Beauty Wellness" />
-  <meta property="og:description" content="Discover Care Essentials, a skincare supplement and nail fungus remedy trusted by wellness seekers." />
-  <meta property="og:url" content="https://tfs2006.github.io/careessentials-site/" />
-  <meta property="og:image" content="https://tfs2006.github.io/careessentials-site/og-image.jpg" />
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Care Essentials – Fungus Treatment & Beauty Wellness" />
-  <meta name="twitter:description" content="Skincare supplement and nail fungus remedy. Explore benefits and real results." />
-  <meta name="twitter:image" content="https://tfs2006.github.io/careessentials-site/og-image.jpg" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Care Essentials Affiliate Site",
-    "url": "https://tfs2006.github.io/careessentials-site/",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://tfs2006.github.io/careessentials-site/?q={search_term_string}",
-      "query-input": "required name=search_term_string"
+  <title>Care Essentials – Beauty & Skin Wellness | Fungus & Nail Care</title>
+  <meta name="description" content="Care Essentials wellness solutions. Fast-acting, safe, and proven results. Join as an affiliate or learn more today." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f2fbf7;
+      --soft:#e7f5ef;
+      --primary:#2c7a7b; /* teal */
+      --primary-600:#1f6566;
+      --accent:#5aa6a7;
+      --ink:#0f2d2e;
+      --muted:#4a6869;
+      --card:#ffffff;
+      --blue:#e7f0fb;
     }
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "name": "Care Essentials",
-    "category": "Health & Beauty > Personal Care",
-    "description": "Skincare supplement and nail fungus remedy for beauty wellness.",
-    "brand": "Care Essentials",
-    "offers": {
-      "@type": "Offer",
-      "url": "https://hop.clickbank.net/?affiliate=tfs2006&vendor=careessentials",
-      "priceCurrency": "USD",
-      "availability": "https://schema.org/InStock"
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:'Open Sans',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+    a{color:var(--primary);text-decoration:none}
+    a:hover{color:var(--primary-600)}
+    /* Header */
+    .nav{position:sticky;top:0;z-index:50;background:#ffffffaa;backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid #e6eae9}
+    .nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+    .brand{display:flex;align-items:center;gap:10px;font-family:'Nunito', sans-serif;font-weight:800;color:var(--primary)}
+    .brand .dot{width:12px;height:12px;border-radius:50%;background:linear-gradient(135deg,#7ed0c0,#2c7a7b)}
+    .menu{display:flex;gap:18px;flex-wrap:wrap}
+    .menu a{font-weight:600;color:var(--muted)}
+    .menu a.active{color:var(--primary)}
+    .cta{display:inline-block;background:var(--primary);color:#fff;font-weight:700;border-radius:999px;padding:10px 16px}
+    .cta:hover{background:var(--primary-600)}
+    /* Hero */
+    .hero{background:linear-gradient(180deg,var(--soft),#f7fffb 70%);}
+    .hero-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr;gap:28px;padding:54px 20px}
+    .eyebrow{letter-spacing:.12em;text-transform:uppercase;color:var(--primary);font-weight:700;font-size:.85rem}
+    h1{font-family:'Nunito',sans-serif;font-weight:800;line-height:1.15;margin:.3rem 0 1rem;font-size: clamp(1.8rem, 2.6vw + 1rem, 3rem)}
+    .sub{color:var(--muted);max-width:56ch}
+    .hero-cta{display:flex;gap:12px;align-items:center;margin-top:18px;flex-wrap:wrap}
+    .btn{background:var(--primary);color:#fff;font-weight:800;border:none;border-radius:12px;padding:12px 18px;box-shadow:0 6px 18px rgba(44,122,123,.18)}
+    .btn:hover{background:var(--primary-600)}
+    .ghost{background:#eaf6f3;color:var(--primary);box-shadow:none}
+    .hero img{width:100%;height:100%;object-fit:cover;border-radius:18px;box-shadow:0 8px 28px rgba(16,42,43,.15)}
+    /* Benefits */
+    .section{max-width:1100px;margin:0 auto;padding:40px 20px}
+    .section h2{font-family:'Nunito',sans-serif;font-weight:800;margin:0 0 14px}
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .card{background:var(--card);border:1px solid #e6eceb;border-radius:16px;padding:18px;box-shadow:0 4px 14px rgba(16,42,43,.06)}
+    .icon{width:40px;height:40px;border-radius:10px;background:var(--blue);display:grid;place-items:center;color:var(--primary);font-weight:900}
+    .card h3{margin:10px 0 6px;font-family:'Nunito',sans-serif;font-size:1.05rem}
+    .muted{color:var(--muted)}
+    /* Stats */
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .kpi{background:linear-gradient(180deg,#ffffff, #f2fbf7);border:1px solid #e6eceb;border-radius:16px;padding:18px;text-align:center}
+    .kpi .label{color:var(--muted);font-size:.9rem}
+    .kpi .value{font-family:'Nunito',sans-serif;font-weight:800;font-size:1.8rem;color:var(--primary)}
+    /* Testimonials */
+    .tgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .review{background:#fff;border:1px solid #e6eceb;border-radius:16px;padding:18px;box-shadow:0 8px 24px rgba(16,42,43,.06)}
+    .review .who{display:flex;align-items:center;gap:12px;margin-top:12px;color:var(--muted)}
+    .avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#bde8dd,#7dc7c7)}
+    /* Footer */
+    footer{background:#0f2d2e;color:#e9f6f5;margin-top:30px}
+    .foot{max-width:1100px;margin:0 auto;padding:28px 20px;display:grid;grid-template-columns:1fr auto;gap:18px}
+    .foot a{color:#b3ebe7}
+    .foot a:hover{color:#fff}
+    .copy{color:#9fd1cd}
+    /* Responsive */
+    @media (max-width: 920px){
+      .hero-inner{grid-template-columns:1fr;}
+      .grid{grid-template-columns:repeat(2,1fr)}
+      .stats{grid-template-columns:1fr}
+      .tgrid{grid-template-columns:1fr}
     }
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "T.F.",
-    "email": "careessentials@4ourmedia.com"
-  }
-  </script>
+    @media (max-width: 520px){
+      .menu{display:none}
+      .grid{grid-template-columns:1fr}
+    }
+  </style>
 </head>
 <body>
-  <h1>Care Essentials – Fungus Treatment & Beauty Wellness</h1>
-  <p>Discover Care Essentials, your trusted solution for nail fungus treatment and skincare wellness.</p>
-  <a href="https://hop.clickbank.net/?affiliate=tfs2006&vendor=careessentials" target="_blank" rel="noopener noreferrer">Learn More About Care Essentials</a>
-  
-  <footer style="margin-top: 50px; padding: 20px; border-top: 1px solid #ccc; text-align: center;">
-    <p>&copy; 2025 Care Essentials. All rights reserved.</p>
-    <p>
-      <a href="privacy.html">Privacy Policy</a> | 
-      <a href="mailto:careessentials@4ourmedia.com">Contact Us</a>
-    </p>
+  <!-- Top Navigation -->
+  <header class="nav" role="banner">
+    <div class="nav-inner">
+      <div class="brand"><span class="dot" aria-hidden="true"></span>Care Essentials</div>
+      <nav class="menu" aria-label="Top navigation">
+        <a href="#" class="active">Home</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#blog">Blog</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="cta" href="https://hop.clickbank.net/?affiliate=tfs2006&vendor=careessentials" target="_blank" rel="noopener">Get Care Essentials</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="eyebrow">Beauty & Wellness</div>
+        <h1>Fungus and Skin Wellness, Made Simple</h1>
+        <p class="sub">Healthy nails and glowing skin start with consistent, safe care. Discover a gentle, fast-acting formula trusted by wellness seekers and affiliates alike.</p>
+        <div class="hero-cta">
+          <a class="btn" href="https://hop.clickbank.net/?affiliate=tfs2006&vendor=careessentials" target="_blank" rel="noopener">Try Care Essentials</a>
+          <a class="btn ghost" href="#benefits">See Benefits</a>
+        </div>
+      </div>
+      <div>
+        <img alt="Wellness and nail care" src="https://images.unsplash.com/photo-1616394584738-fc6e612a9bcd?q=80&w=1200&auto=format&fit=crop" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits with icons -->
+  <section id="benefits" class="section">
+    <h2>Why Care Essentials</h2>
+    <div class="grid" role="list">
+      <div class="card" role="listitem">
+        <div class="icon" aria-hidden="true">⚡</div>
+        <h3>Fast-Acting</h3>
+        <p class="muted">Targets fungus and supports skin appearance quickly with consistent use.</p>
+      </div>
+      <div class="card" role="listitem">
+        <div class="icon" aria-hidden="true">🛡️</div>
+        <h3>Safe</h3>
+        <p class="muted">Crafted with safety in mind and friendly for daily routines.</p>
+      </div>
+      <div class="card" role="listitem">
+        <div class="icon" aria-hidden="true">🧪</div>
+        <h3>Scientifically Proven</h3>
+        <p class="muted">Evidence-informed formulation trusted by wellness enthusiasts.</p>
+      </div>
+      <div class="card" role="listitem">
+        <div class="icon" aria-hidden="true">💸</div>
+        <h3>High Payouts</h3>
+        <p class="muted">Attractive affiliate commissions with strong EPC performance.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Affiliate stats -->
+  <section class="section" aria-labelledby="stats-heading">
+    <h2 id="stats-heading">Affiliate Performance Highlights</h2>
+    <div class="stats">
+      <div class="kpi">
+        <div class="label">Earnings per Click (EPC)</div>
+        <div class="value">$1.85</div>
+      </div>
+      <div class="kpi">
+        <div class="label">Average Payout</div>
+        <div class="value">$64.20</div>
+      </div>
+      <div class="kpi">
+        <div class="label">Conversion Rate</div>
+        <div class="value">3.4%</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="section">
+    <h2>Loved by Customers</h2>
+    <div class="tgrid">
+      <article class="review" aria-label="Testimonial from Jamie R.">
+        <p>“I noticed my nails looking healthier within weeks. Clean design, easy steps, and a product that actually fits my routine.”</p>
+        <div class="who">
+          <div class="avatar" aria-hidden="true"></div>
+          <div>
+            <strong>Jamie R.</strong><br>
+            <span class="muted">Wellness enthusiast</span>
+          </div>
+        </div>
+      </article>
+      <article class="review" aria-label="Testimonial from Devin S.">
+        <p>“The only regimen that’s been both gentle and effective for stubborn nail concerns. Highly recommend giving it a try.”</p>
+        <div class="who">
+          <div class="avatar" aria-hidden="true"></div>
+          <div>
+            <strong>Devin S.</strong><br>
+            <span class="muted">Verified buyer</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Blog placeholder -->
+  <section id="blog" class="section">
+    <h2>From the Blog</h2>
+    <p class="muted">Tips on nail care, skin wellness, and routine consistency. Articles coming soon.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" role="contentinfo">
+    <div class="foot">
+      <div>
+        <strong>Care Essentials</strong>
+        <p class="copy">© 2025 Care Essentials. All rights reserved.</p>
+        <p class="copy">Contact: <a href="mailto:careessentials@4ourmedia.com">careessentials@4ourmedia.com</a></p>
+      </div>
+      <div>
+        <p><a href="privacy.html">Privacy Policy</a></p>
+        <p><a href="#">Terms</a></p>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
