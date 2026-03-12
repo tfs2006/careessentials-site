@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wellness & Lifestyle Blog | Care Essentials</title>
+  <meta name="description" content="Care Essentials blog — articles on weight loss, brain health, hearing, prostate health, language learning, woodworking, and more." />
+  <link rel="canonical" href="https://careessentials.4ourmedia.com/blog/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#f2fbf7;--soft:#e7f5ef;--primary:#2c7a7b;--primary-600:#1f6566;--accent:#5aa6a7;--ink:#0f2d2e;--muted:#4a6869;--gold:#f59e0b}
+    *{box-sizing:border-box}html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:'Open Sans',system-ui,sans-serif;line-height:1.7}
+    a{color:var(--primary);text-decoration:none}a:hover{color:var(--primary-600)}
+    .nav{position:sticky;top:0;z-index:50;background:#ffffffdd;backdrop-filter:blur(8px);border-bottom:1px solid #e6eae9}
+    .nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+    .brand{font-family:'Nunito',sans-serif;font-weight:800;font-size:1.2rem;color:var(--primary);display:flex;align-items:center;gap:8px}
+    .brand .dot{width:11px;height:11px;border-radius:50%;background:linear-gradient(135deg,#7ed0c0,#2c7a7b)}
+    .menu{display:flex;gap:16px}.menu a{font-weight:600;color:var(--muted);font-size:.9rem}.menu a:hover{color:var(--primary)}
+    .page-hero{background:linear-gradient(135deg,#2c7a7b 0%,#1f6566 100%);color:#fff;padding:56px 20px;text-align:center}
+    .page-hero h1{font-family:'Nunito',sans-serif;font-weight:800;font-size:clamp(1.8rem,3vw+.5rem,2.8rem);margin:0 0 10px}
+    .page-hero p{font-size:1.1rem;opacity:.9;margin:0;max-width:520px;margin:0 auto}
+    .wrap{max-width:1100px;margin:0 auto;padding:40px 20px 60px}
+    .cats{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:32px}
+    .cat-btn{border:1.5px solid var(--accent);color:var(--primary);border-radius:999px;padding:6px 16px;font-size:.85rem;font-weight:600;cursor:pointer;background:none;transition:all .15s}
+    .cat-btn:hover,.cat-btn.active{background:var(--primary);color:#fff;border-color:var(--primary)}
+    .blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
+    .post-card{background:#fff;border-radius:14px;overflow:hidden;border:1px solid #e0eeeb;display:flex;flex-direction:column}
+    .post-thumb{background:linear-gradient(135deg,var(--soft),#d9f0ea);padding:28px 20px 0;display:flex;justify-content:center;align-items:center;font-size:2.8rem;min-height:90px}
+    .post-body{padding:20px;flex:1;display:flex;flex-direction:column}
+    .post-cat{font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
+    .post-card h2{font-family:'Nunito',sans-serif;font-weight:800;font-size:1.05rem;margin:0 0 8px;line-height:1.3}
+    .post-card p{font-size:.88rem;color:var(--muted);flex:1;margin:0 0 16px}
+    .post-meta{font-size:.78rem;color:var(--muted)}
+    .read-link{font-weight:700;font-size:.88rem;color:var(--primary);margin-top:auto}
+    .coming-badge{background:var(--soft);border-radius:999px;padding:3px 10px;font-size:.75rem;font-weight:700;color:var(--accent);display:inline-block;margin-bottom:10px}
+    .cta-section{background:linear-gradient(135deg,var(--soft),#fff);border-radius:18px;text-align:center;padding:40px 24px;margin-top:48px;border:1px solid #cce8e2}
+    .cta-section h2{font-family:'Nunito',sans-serif;font-weight:800;font-size:1.5rem;margin:0 0 12px}
+    .cta-section a{display:inline-block;background:var(--primary);color:#fff;font-weight:800;font-family:'Nunito',sans-serif;border-radius:12px;padding:14px 28px;text-decoration:none;margin-top:8px}
+    footer{background:#0f2d2e;color:#e9f6f5}
+    .foot-inner{max-width:1100px;margin:0 auto;padding:24px 20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+    .foot-inner a{color:#9fd1cd}.foot-copy{color:#9fd1cd;font-size:.82rem}
+    @media(max-width:600px){.menu{display:none}}
+  </style>
+</head>
+<body>
+<header class="nav" role="banner">
+  <div class="nav-inner">
+    <a class="brand" href="../index.html"><span class="dot"></span>Care Essentials</a>
+    <nav class="menu"><a href="../index.html">Home</a><a href="../reviews/index.html">Reviews</a><a href="index.html" aria-current="page">Blog</a><a href="../about.html">About</a></nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <h1>The Care Essentials Blog</h1>
+  <p>Research-backed guides on weight loss, brain health, hearing, prostate care, language learning, and more.</p>
+</section>
+
+<div class="wrap">
+  <div class="cats">
+    <button class="cat-btn active">All Topics</button>
+    <button class="cat-btn">Weight Loss</button>
+    <button class="cat-btn">Brain Health</button>
+    <button class="cat-btn">Men's Health</button>
+    <button class="cat-btn">Learning</button>
+    <button class="cat-btn">DIY &amp; Home</button>
+    <button class="cat-btn">Hearing</button>
+  </div>
+
+  <div class="blog-grid">
+
+    <article class="post-card">
+      <div class="post-thumb">⚖️</div>
+      <div class="post-body">
+        <div class="post-cat">Weight Loss</div>
+        <span class="coming-badge">Coming Soon</span>
+        <h2>7 Signs Your Mitochondria Are Slowing Your Metabolism (And What to Do)</h2>
+        <p>Why calorie counting alone doesn't work after 40 — and the cellular root cause most diets ignore.</p>
+        <span class="post-meta">Estimated publish: Feb 2026</span>
+      </div>
+    </article>
+
+    <article class="post-card">
+      <div class="post-thumb">🥤</div>
+      <div class="post-body">
+        <div class="post-cat">Weight Loss</div>
+        <span class="coming-badge">Coming Soon</span>
+        <h2>5 Green Smoothies for Belly Fat That Actually Work (With Recipes)</h2>
+        <p>The ingredients that target abdominal adipose tissue — and how to blend them for maximum effect.</p>
+        <span class="post-meta">Estimated publish: Feb 2026</span>
+      </div>
+    </article>
+
+    <article class="post-card">
+      <div class="post-thumb">🦷</div>
+      <div class="post-body">
+        <div class="post-cat">Oral Health</div>
+        <span class="coming-badge">Coming Soon</span>
+        <h2>Your Toothpaste May Be Destroying Your Oral Microbiome — Here's Why</h2>
+        <p>The surprising science behind why conventional dental hygiene products may be causing more harm than good.</p>
+        <span class="post-meta">Estimated publish: Feb 2026</span>
+      </div>
+    </article>
+
+    <article class="post-card">
+      <div class="post-thumb">🧠</div>
+      <div class="post-body">
+        <div class="post-cat">Brain Health</div>
+        <span class="coming-badge">Coming Soon</span>
+        <h2>Theta vs Gamma Brainwaves: Which Audio Frequency Is Right for You?</h2>
+        <p>NASA's brainwave research explained in plain English — and how to use it for focus, memory, and creativity.</p>
+        <span class="post-meta">Estimated publish: Mar 2026</span>
+      </div>
+    </article>
+
+    <article class="post-card">
+      <div class="post-thumb">👨</div>
+      <div class="post-body">
+        <div class="post-cat">Men's Health</div>
+        <span class="coming-badge">Coming Soon</span>
+        <h2>BPH vs Prostate Cancer: What Every Man Over 50 Should Know</h2>
+        <p>Critical differences, warning signs, and natural support strategies for prostate health in midlife.</p>
+        <span class="post-meta">Estimated publish: Mar 2026</span>
+      </div>
+    </article>
+
+    <article class="post-card">
+      <div class="post-thumb">🔊</div>
+      <div class="post-body">
+        <div class="post-cat">Hearing</div>
+        <span class="coming-badge">Coming Soon</span>
+        <h2>Tinnitus Is a Brain Problem, Not an Ear Problem — Here's the Science</h2>
+        <p>Why most hearing treatments fail — and what the neural pathway research says about actually reducing ringing.</p>
+        <span class="post-meta">Estimated publish: Mar 2026</span>
+      </div>
+    </article>
+
+    <article class="post-card">
+      <div class="post-thumb">⚡</div>
+      <div class="post-body">
+        <div class="post-cat">DIY &amp; Home</div>
+        <span class="coming-badge">Coming Soon</span>
+        <h2>How to Cut Your Electric Bill by 40% Without Solar Panels</h2>
+        <p>DIY energy-saving strategies from home efficiency experts — no permits, no contractors required.</p>
+        <span class="post-meta">Estimated publish: Apr 2026</span>
+      </div>
+    </article>
+
+    <article class="post-card">
+      <div class="post-thumb">🌍</div>
+      <div class="post-body">
+        <div class="post-cat">Learning</div>
+        <span class="coming-badge">Coming Soon</span>
+        <h2>Rocket Languages vs Duolingo vs Rosetta Stone — Complete 2026 Comparison</h2>
+        <p>Which language learning platform actually gets you to conversational fluency? An honest side-by-side breakdown.</p>
+        <span class="post-meta">Estimated publish: Apr 2026</span>
+      </div>
+    </article>
+
+    <article class="post-card">
+      <div class="post-thumb">🪵</div>
+      <div class="post-body">
+        <div class="post-cat">DIY &amp; Home</div>
+        <span class="coming-badge">Coming Soon</span>
+        <h2>10 Beginner Woodworking Projects You Can Complete in a Weekend</h2>
+        <p>From bookshelf to garden bench — projects with full dimensions, cut lists, and step-by-step instructions.</p>
+        <span class="post-meta">Estimated publish: Apr 2026</span>
+      </div>
+    </article>
+
+  </div>
+
+  <div class="cta-section">
+    <h2>Read Our In-Depth Product Reviews</h2>
+    <p>While you wait for new blog posts, explore our fully researched reviews of the top wellness and lifestyle programs.</p>
+    <a href="../reviews/index.html">Browse All 10 Reviews →</a>
+  </div>
+</div>
+
+<footer role="contentinfo">
+  <div class="foot-inner">
+    <div><strong style="font-family:'Nunito',sans-serif">Care Essentials</strong><p class="foot-copy">© 2026 Care Essentials | <a href="../privacy.html">Privacy</a> | <a href="../disclaimer.html">Disclaimer</a></p></div>
+    <div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap"><a href="../index.html">Home</a><a href="../reviews/index.html">Reviews</a><a href="../about.html">About</a></div>
+  </div>
+</footer>
+</body>
+</html>

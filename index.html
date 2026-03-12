@@ -3,182 +3,396 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Care Essentials – Beauty & Skin Wellness | Fungus & Nail Care</title>
-  <meta name="description" content="Care Essentials wellness solutions. Fast-acting, safe, and proven results for healthy nails and glowing skin." />
+  <title>Care Essentials – Honest Reviews & Top Wellness Products 2026</title>
+  <meta name="description" content="Unbiased, research-backed reviews of today's top health and wellness products. Find the best supplements, programs, and tools to reach your goals in 2026." />
+  <link rel="canonical" href="https://careessentials.4ourmedia.com/" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Schema.org: Website -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebSite","name":"Care Essentials","url":"https://careessentials.4ourmedia.com","description":"Honest independent reviews of top health, wellness, and lifestyle products.","potentialAction":{"@type":"SearchAction","target":"https://careessentials.4ourmedia.com/blog/?q={search_term_string}","query-input":"required name=search_term_string"}}
+  </script>
   <style>
     :root{
       --bg:#f2fbf7;
       --soft:#e7f5ef;
-      --primary:#2c7a7b; /* teal */
+      --primary:#2c7a7b;
       --primary-600:#1f6566;
       --accent:#5aa6a7;
       --ink:#0f2d2e;
       --muted:#4a6869;
       --card:#ffffff;
       --blue:#e7f0fb;
+      --gold:#f59e0b;
     }
     *{box-sizing:border-box}
     html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:'Open Sans',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
     a{color:var(--primary);text-decoration:none}
     a:hover{color:var(--primary-600)}
-    /* Header */
-    .nav{position:sticky;top:0;z-index:50;background:#ffffffaa;backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid #e6eae9}
-    .nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
-    .brand{display:flex;align-items:center;gap:10px;font-family:'Nunito', sans-serif;font-weight:800;color:var(--primary)}
-    .brand .dot{width:12px;height:12px;border-radius:50%;background:linear-gradient(135deg,#7ed0c0,#2c7a7b)}
+    /* ── Nav ── */
+    .nav{position:sticky;top:0;z-index:50;background:#ffffffdd;backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid #e6eae9}
+    .nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px;gap:12px}
+    .brand{display:flex;align-items:center;gap:10px;font-family:'Nunito',sans-serif;font-weight:800;font-size:1.2rem;color:var(--primary)}
+    .brand .dot{width:12px;height:12px;border-radius:50%;background:linear-gradient(135deg,#7ed0c0,#2c7a7b);flex-shrink:0}
     .menu{display:flex;gap:18px;flex-wrap:wrap}
-    .menu a{font-weight:600;color:var(--muted)}
-    .menu a.active{color:var(--primary)}
-    .cta{display:inline-block;background:var(--primary);color:#fff;font-weight:700;border-radius:999px;padding:10px 16px}
-    .cta:hover{background:var(--primary-600)}
-    /* Hero */
-    .hero{background:linear-gradient(180deg,var(--soft),#f7fffb 70%);}
-    .hero-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr;gap:28px;padding:54px 20px}
-    .eyebrow{letter-spacing:.12em;text-transform:uppercase;color:var(--primary);font-weight:700;font-size:.85rem}
-    h1{font-family:'Nunito',sans-serif;font-weight:800;line-height:1.15;margin:.3rem 0 1rem;font-size: clamp(1.8rem, 2.6vw + 1rem, 3rem)}
-    .sub{color:var(--muted);max-width:56ch}
-    .hero-cta{display:flex;gap:12px;align-items:center;margin-top:18px;flex-wrap:wrap}
-    .btn{background:var(--primary);color:#fff;font-weight:800;border:none;border-radius:12px;padding:12px 18px;box-shadow:0 6px 18px rgba(44,122,123,.18)}
-    .btn:hover{background:var(--primary-600)}
-    .ghost{background:#eaf6f3;color:var(--primary);box-shadow:none}
-    .hero img{width:100%;height:100%;object-fit:cover;border-radius:18px;box-shadow:0 8px 28px rgba(16,42,43,.15)}
-    /* Benefits */
-    .section{max-width:1100px;margin:0 auto;padding:40px 20px}
-    .section h2{font-family:'Nunito',sans-serif;font-weight:800;margin:0 0 14px}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .card{background:var(--card);border:1px solid #e6eceb;border-radius:16px;padding:18px;box-shadow:0 4px 14px rgba(16,42,43,.06)}
-    .icon{width:40px;height:40px;border-radius:10px;background:var(--blue);display:grid;place-items:center;color:var(--primary);font-weight:900}
-    .card h3{margin:10px 0 6px;font-family:'Nunito',sans-serif;font-size:1.05rem}
-    .muted{color:var(--muted)}
-    /* Testimonials */
-    .tgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
-    .review{background:#fff;border:1px solid #e6eceb;border-radius:16px;padding:18px;box-shadow:0 8px 24px rgba(16,42,43,.06)}
-    .review .who{display:flex;align-items:center;gap:12px;margin-top:12px;color:var(--muted)}
-    .avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#bde8dd,#7dc7c7)}
-    /* Footer */
-    footer{background:#0f2d2e;color:#e9f6f5;margin-top:30px}
-    .foot{max-width:1100px;margin:0 auto;padding:28px 20px;display:grid;grid-template-columns:1fr auto;gap:18px}
-    .foot a{color:#b3ebe7}
-    .foot a:hover{color:#fff}
-    .copy{color:#9fd1cd}
-    /* Responsive */
-    @media (max-width: 920px){
-      .hero-inner{grid-template-columns:1fr;}
-      .grid{grid-template-columns:repeat(2,1fr)}
-      .tgrid{grid-template-columns:1fr}
+    .menu a{font-weight:600;color:var(--muted);font-size:.95rem}
+    .menu a:hover,.menu a.active{color:var(--primary)}
+    .nav-cta{display:inline-block;background:var(--primary);color:#fff;font-weight:700;border-radius:999px;padding:9px 18px;font-size:.9rem;white-space:nowrap}
+    .nav-cta:hover{background:var(--primary-600);color:#fff}
+    /* ── Hero ── */
+    .hero{background:linear-gradient(160deg,var(--soft) 0%,#ffffff 80%)}
+    .hero-inner{max-width:1200px;margin:0 auto;padding:60px 24px 50px;text-align:center}
+    .eyebrow{letter-spacing:.12em;text-transform:uppercase;color:var(--primary);font-weight:700;font-size:.82rem;margin-bottom:8px}
+    h1{font-family:'Nunito',sans-serif;font-weight:800;line-height:1.15;margin:.3rem 0 1rem;font-size:clamp(2rem,3.5vw + 1rem,3.4rem);color:var(--ink)}
+    .sub{color:var(--muted);max-width:60ch;margin:0 auto 24px;font-size:1.1rem}
+    .hero-badges{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:16px}
+    .badge{background:var(--soft);color:var(--primary);border:1px solid #c3e8de;border-radius:999px;padding:4px 14px;font-size:.82rem;font-weight:700}
+    /* ── Sections ── */
+    .section{max-width:1200px;margin:0 auto;padding:48px 24px}
+    .section-center{text-align:center}
+    .section h2,.section-center h2{font-family:'Nunito',sans-serif;font-weight:800;font-size:clamp(1.5rem,2vw+.5rem,2.2rem);margin:0 0 8px}
+    .section-sub{color:var(--muted);margin:0 0 32px}
+    /* ── Product grid ── */
+    .products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
+    .product-card{background:var(--card);border:1px solid #e0eeeb;border-radius:18px;padding:22px;box-shadow:0 4px 18px rgba(16,42,43,.07);display:flex;flex-direction:column;gap:10px;transition:box-shadow .18s,transform .18s}
+    .product-card:hover{box-shadow:0 8px 32px rgba(44,122,123,.16);transform:translateY(-3px)}
+    .product-card .cat{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+    .product-card h3{font-family:'Nunito',sans-serif;font-weight:800;font-size:1.12rem;margin:0;color:var(--ink)}
+    .product-card .desc{color:var(--muted);font-size:.92rem;flex:1}
+    .stars{color:var(--gold);font-size:.95rem;letter-spacing:1px}
+    .card-meta{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+    .commission{font-size:.78rem;color:var(--muted)}
+    .btn-review{display:inline-block;background:var(--primary);color:#fff;font-weight:700;border-radius:10px;padding:10px 18px;font-size:.9rem;text-align:center;margin-top:4px}
+    .btn-review:hover{background:var(--primary-600);color:#fff}
+    /* ── Categories strip ── */
+    .cats{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:32px}
+    .cat-pill{background:#fff;border:1.5px solid #d4ece7;color:var(--primary);font-weight:700;font-size:.85rem;padding:7px 18px;border-radius:999px;cursor:pointer;transition:background .15s,color .15s}
+    .cat-pill:hover,.cat-pill.active{background:var(--primary);color:#fff;border-color:var(--primary)}
+    /* ── Trust bar ── */
+    .trust-bar{background:#fff;border-top:1px solid #e6eae9;border-bottom:1px solid #e6eae9;padding:18px 24px}
+    .trust-inner{max-width:1200px;margin:0 auto;display:flex;gap:28px;flex-wrap:wrap;align-items:center;justify-content:center}
+    .trust-item{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:.88rem;font-weight:600}
+    .trust-item span.icon{font-size:1.1rem}
+    /* ── Why us ── */
+    .three-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .plain-card{background:#fff;border:1px solid #e6eceb;border-radius:16px;padding:20px;box-shadow:0 4px 12px rgba(16,42,43,.05)}
+    .plain-card .ic{width:44px;height:44px;border-radius:12px;background:var(--soft);display:grid;place-items:center;font-size:1.3rem;margin-bottom:10px}
+    .plain-card h3{font-family:'Nunito',sans-serif;font-size:1rem;margin:0 0 6px}
+    .plain-card p{color:var(--muted);font-size:.9rem;margin:0}
+    /* ── Disclaimer ── */
+    .disclaimer{background:#fffbea;border:1px solid #fde68a;border-radius:12px;padding:14px 18px;font-size:.82rem;color:#78611b;max-width:1200px;margin:0 auto 0;padding-left:24px;padding-right:24px}
+    /* ── Footer ── */
+    footer{background:#0f2d2e;color:#e9f6f5;margin-top:48px}
+    .foot-inner{max-width:1200px;margin:0 auto;padding:36px 24px;display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:32px}
+    .foot-brand{font-family:'Nunito',sans-serif;font-weight:800;font-size:1.1rem;margin-bottom:8px}
+    .foot-copy{color:#9fd1cd;font-size:.85rem;margin:4px 0}
+    .foot-col h4{font-family:'Nunito',sans-serif;font-weight:800;font-size:.9rem;color:#b3ebe7;margin:0 0 12px;letter-spacing:.06em;text-transform:uppercase}
+    .foot-col a{display:block;color:#9fd1cd;font-size:.88rem;margin-bottom:6px}
+    .foot-col a:hover{color:#fff}
+    .foot-bottom{border-top:1px solid #1e4445;max-width:1200px;margin:0 auto;padding:16px 24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+    .foot-bottom span{color:#9fd1cd;font-size:.8rem}
+    .foot-bottom a{color:#9fd1cd;font-size:.8rem}
+    .foot-bottom a:hover{color:#fff}
+    /* ── Responsive ── */
+    @media(max-width:900px){
+      .three-grid{grid-template-columns:1fr 1fr}
+      .foot-inner{grid-template-columns:1fr 1fr}
     }
-    @media (max-width: 520px){
+    @media(max-width:600px){
       .menu{display:none}
-      .grid{grid-template-columns:1fr}
+      .three-grid{grid-template-columns:1fr}
+      .foot-inner{grid-template-columns:1fr}
+      .foot-bottom{flex-direction:column;text-align:center}
     }
   </style>
 </head>
 <body>
-  <!-- Top Navigation -->
-  <header class="nav" role="banner">
-    <div class="nav-inner">
-      <div class="brand"><span class="dot" aria-hidden="true"></span>Care Essentials</div>
-      <nav class="menu" aria-label="Top navigation">
-        <a href="#" class="active">Home</a>
-        <a href="#benefits">Benefits</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#blog">Blog</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <a class="cta" href="https://hop.clickbank.net/?affiliate=yourID&vendor=careessentials" target="_blank" rel="noopener">Get Care Essentials</a>
-    </div>
-  </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-inner">
-      <div>
-        <div class="eyebrow">Beauty & Wellness</div>
-        <h1>Fungus and Skin Wellness, Made Simple</h1>
-        <p class="sub">Healthy nails and glowing skin start with consistent, safe care. Discover a gentle, fast-acting formula trusted by wellness seekers worldwide.</p>
-        <div class="hero-cta">
-          <a class="btn" href="https://hop.clickbank.net/?affiliate=yourID&vendor=careessentials" target="_blank" rel="noopener">Try Care Essentials</a>
-          <a class="btn ghost" href="#benefits">See Benefits</a>
-        </div>
+<!-- ── Navigation ── -->
+<header class="nav" role="banner">
+  <div class="nav-inner">
+    <a class="brand" href="index.html"><span class="dot" aria-hidden="true"></span>Care Essentials</a>
+    <nav class="menu" aria-label="Main navigation">
+      <a href="index.html" class="active">Home</a>
+      <a href="reviews/index.html">Reviews</a>
+      <a href="blog/index.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="disclaimer.html">Disclaimer</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+    <a class="nav-cta" href="reviews/index.html">Browse All Reviews</a>
+  </div>
+</header>
+
+<!-- ── Hero ── -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">Independent Wellness Reviews — 2026</div>
+    <h1>Find Products That Actually Work.<br>Stop Wasting Money on Hype.</h1>
+    <p class="sub">We research, analyze, and review the internet's most-talked-about health and wellness products so you don't have to guess.</p>
+    <div class="hero-badges">
+      <span class="badge">✅ Honest &amp; Unbiased</span>
+      <span class="badge">🔬 Research-Backed</span>
+      <span class="badge">💰 Best Value Picks</span>
+      <span class="badge">⭐ Top-Rated 2026</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── Trust Bar ── -->
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-item"><span class="icon">🔍</span> Independent Research</div>
+    <div class="trust-item"><span class="icon">📋</span> Ingredient Deep-Dives</div>
+    <div class="trust-item"><span class="icon">🛡️</span> Money-Back Guarantees Verified</div>
+    <div class="trust-item"><span class="icon">👤</span> Real Customer Results</div>
+    <div class="trust-item"><span class="icon">🚫</span> No Paid Placements</div>
+  </div>
+</div>
+
+<!-- ── Product Reviews Hub ── -->
+<section class="section">
+  <div class="section-center">
+    <h2>Our Top 10 Reviewed Products for 2026</h2>
+    <p class="section-sub">Click any review to read our full, in-depth breakdown — ingredients, results, pricing, and our honest verdict.</p>
+  </div>
+  <!-- Category filter pills -->
+  <div class="cats">
+    <span class="cat-pill active">All</span>
+    <span class="cat-pill">Weight Loss</span>
+    <span class="cat-pill">Brain &amp; Focus</span>
+    <span class="cat-pill">Men's Health</span>
+    <span class="cat-pill">Energy &amp; Home</span>
+    <span class="cat-pill">Courses</span>
+    <span class="cat-pill">Hearing Health</span>
+  </div>
+  <div class="products-grid">
+
+    <!-- 1. Mitolyn -->
+    <article class="product-card">
+      <div class="cat">⚖️ Weight Loss</div>
+      <h3>Mitolyn — Mitochondria Weight Loss</h3>
+      <div class="stars">★★★★★</div>
+      <p class="desc">Targets the root cause of stubborn weight — sluggish mitochondria. Ideal for women 40–60 who diet and exercise but can't budge the scale.</p>
+      <div class="card-meta">
+        <span class="commission">~$160 avg commission</span>
+        <span style="font-size:.78rem;color:var(--primary);font-weight:700">✅ EDITOR'S PICK</span>
       </div>
-      <div>
-        <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=800&h=600&fit=crop" alt="Wellness and nail care" />
+      <a class="btn-review" href="reviews/mitolyn-review.html">Read Full Review →</a>
+    </article>
+
+    <!-- 2. ProDentim -->
+    <article class="product-card">
+      <div class="cat">🦷 Dental Health</div>
+      <h3>ProDentim — Dental Probiotic</h3>
+      <div class="stars">★★★★★</div>
+      <p class="desc">3.5 billion probiotic strains per dose restore the oral microbiome most toothpastes destroy. A revolutionary approach to gum and tooth health.</p>
+      <div class="card-meta">
+        <span class="commission">~$137 avg commission</span>
+      </div>
+      <a class="btn-review" href="reviews/prodentim-review.html">Read Full Review →</a>
+    </article>
+
+    <!-- 3. Brain Song -->
+    <article class="product-card">
+      <div class="cat">🧠 Brain &amp; Focus</div>
+      <h3>The Brain Song — Theta Audio Boost</h3>
+      <div class="stars">★★★★★</div>
+      <p class="desc">An ex-NASA neuroscientist's 7-minute audio unlocks a dormant Theta brainwave in 98% of people. Boosts focus, manifestation, and mental clarity.</p>
+      <div class="card-meta">
+        <span class="commission">Top EPC — #1 March 2026</span>
+        <span style="font-size:.78rem;color:var(--primary);font-weight:700">🔥 TRENDING</span>
+      </div>
+      <a class="btn-review" href="reviews/brain-song-review.html">Read Full Review →</a>
+    </article>
+
+    <!-- 4. Genius Switch -->
+    <article class="product-card">
+      <div class="cat">🧠 Brain &amp; Focus</div>
+      <h3>The Genius Switch — Brain Activation</h3>
+      <div class="stars">★★★★☆</div>
+      <p class="desc">A 12-minute daily audio program backed by a NYC neurologist. Activates whole-brain connectivity for creativity, IQ uplift, and deep focus.</p>
+      <div class="card-meta">
+        <span class="commission">Strong RevShare</span>
+      </div>
+      <a class="btn-review" href="reviews/genius-switch-review.html">Read Full Review →</a>
+    </article>
+
+    <!-- 5. Energy Revolution -->
+    <article class="product-card">
+      <div class="cat">⚡ Energy &amp; Home</div>
+      <h3>Energy Revolution System — Cut Your Bill</h3>
+      <div class="stars">★★★★☆</div>
+      <p class="desc">A century-old suppressed Tesla concept now available as a DIY off-grid system. Real families are cutting electric bills by 50%+.</p>
+      <div class="card-meta">
+        <span class="commission">~$50–69 avg commission</span>
+      </div>
+      <a class="btn-review" href="reviews/energy-revolution-system-review.html">Read Full Review →</a>
+    </article>
+
+    <!-- 6. ProstaVive -->
+    <article class="product-card">
+      <div class="cat">👨 Men's Health</div>
+      <h3>ProstaVive — Prostate Support for Men 50+</h3>
+      <div class="stars">★★★★★</div>
+      <p class="desc">Clinically studied ingredients address enlarged prostate and nighttime urination. Backed by a ClickBank Diamond Vendor with $80M+ in proven sales.</p>
+      <div class="card-meta">
+        <span class="commission">~$150 avg commission</span>
+        <span style="font-size:.78rem;color:var(--primary);font-weight:700">✅ TOP SELLER</span>
+      </div>
+      <a class="btn-review" href="reviews/prostavive-review.html">Read Full Review →</a>
+    </article>
+
+    <!-- 7. Rocket Languages -->
+    <article class="product-card">
+      <div class="cat">🌍 Courses</div>
+      <h3>Rocket Languages — Learn Any Language</h3>
+      <div class="stars">★★★★★</div>
+      <p class="desc">Learn conversational Spanish, French, and more in 3 months — not 3 years. Beats Duolingo and Rosetta Stone on depth, audio, and real conversation.</p>
+      <div class="card-meta">
+        <span class="commission">~$90–100 avg payout</span>
+      </div>
+      <a class="btn-review" href="reviews/rocket-languages-review.html">Read Full Review →</a>
+    </article>
+
+    <!-- 8. Ted's Woodworking -->
+    <article class="product-card">
+      <div class="cat">🪵 DIY &amp; Hobbies</div>
+      <h3>Ted's Woodworking — 16,000 Plans</h3>
+      <div class="stars">★★★★★</div>
+      <p class="desc">16,000 step-by-step woodworking plans with materials lists, cut lists, and dimensions. Perfect for beginners and seasoned hobbyists alike.</p>
+      <div class="card-meta">
+        <span class="commission">~$64 avg commission</span>
+      </div>
+      <a class="btn-review" href="reviews/teds-woodworking-review.html">Read Full Review →</a>
+    </article>
+
+    <!-- 9. Smoothie Diet -->
+    <article class="product-card">
+      <div class="cat">⚖️ Weight Loss</div>
+      <h3>The Smoothie Diet — 21-Day Reset</h3>
+      <div class="stars">★★★★★</div>
+      <p class="desc">Replace 2 meals a day with health coach-designed smoothies and lose up to 10 lbs in 3 weeks. Zero complicated meal prep. Real customer photos prove it.</p>
+      <div class="card-meta">
+        <span class="commission">$29–$100+ w/ upsells</span>
+        <span style="font-size:.78rem;color:var(--primary);font-weight:700">🔥 POPULAR</span>
+      </div>
+      <a class="btn-review" href="reviews/smoothie-diet-review.html">Read Full Review →</a>
+    </article>
+
+    <!-- 10. Audifort -->
+    <article class="product-card">
+      <div class="cat">👂 Hearing Health</div>
+      <h3>Audifort — Tinnitus &amp; Hearing Support</h3>
+      <div class="stars">★★★★☆</div>
+      <p class="desc">Deep empathy for tinnitus sufferers 50+. Uses the brain-ear neural pathway to reduce ringing and support hearing health. 60-day risk-free guarantee.</p>
+      <div class="card-meta">
+        <span class="commission">65% RevShare — Highest EPC</span>
+      </div>
+      <a class="btn-review" href="reviews/audifort-review.html">Read Full Review →</a>
+    </article>
+
+  </div>
+</section>
+
+<!-- ── Why Trust Us ── -->
+<section class="section" style="background:#fff;border-radius:0">
+  <div style="max-width:1200px;margin:0 auto">
+    <div class="section-center">
+      <h2>Why Readers Trust Care Essentials</h2>
+      <p class="section-sub">We do the legwork so you can make confident, informed decisions.</p>
+    </div>
+    <div class="three-grid">
+      <div class="plain-card">
+        <div class="ic">🔬</div>
+        <h3>Ingredient Research</h3>
+        <p>We dig into every ingredient — clinical studies, dosages, and real-world evidence — before writing a word.</p>
+      </div>
+      <div class="plain-card">
+        <div class="ic">💬</div>
+        <h3>Real User Feedback</h3>
+        <p>We aggregate hundreds of verified customer reviews and forum discussions to reflect real-world results, not marketing claims.</p>
+      </div>
+      <div class="plain-card">
+        <div class="ic">✅</div>
+        <h3>Guarantee Check</h3>
+        <p>We verify every money-back guarantee and refund policy so you know your purchase is truly risk-free.</p>
+      </div>
+      <div class="plain-card">
+        <div class="ic">⚖️</div>
+        <h3>Honest Verdict</h3>
+        <p>If a product doesn't deliver, we say so. Our "Does It Work?" section gives you a straight answer.</p>
+      </div>
+      <div class="plain-card">
+        <div class="ic">🏷️</div>
+        <h3>Best Price Tracking</h3>
+        <p>We check current pricing, discount offers, and bundle deals so you always get the best value available.</p>
+      </div>
+      <div class="plain-card">
+        <div class="ic">📖</div>
+        <h3>No Fluff Writing</h3>
+        <p>Our reviews are detailed, plain-English, and structured so you can find exactly what you need fast.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Benefits with icons -->
-  <section class="section" id="benefits">
-    <h2>Why Care Essentials</h2>
-    <div class="grid" role="list">
-      <div class="card" role="listitem">
-        <div class="icon" aria-hidden="true">⚡</div>
-        <h3>Fast-Acting</h3>
-        <p class="muted">Targets fungus and supports skin appearance quickly with consistent use.</p>
-      </div>
-      <div class="card" role="listitem">
-        <div class="icon" aria-hidden="true">🛡️</div>
-        <h3>Safe</h3>
-        <p class="muted">Crafted with safety in mind and friendly for daily routines.</p>
-      </div>
-      <div class="card" role="listitem">
-        <div class="icon" aria-hidden="true">🧪</div>
-        <h3>Scientifically Proven</h3>
-        <p class="muted">Evidence-informed formulation trusted by wellness enthusiasts.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section class="section" id="testimonials">
-    <h2>Loved by Customers</h2>
-    <div class="tgrid">
-      <article class="review" aria-label="Testimonial from Jamie R.">
-        <p>"I noticed my nails looking healthier within weeks. Clean design, easy steps, and a product that actually fits my routine."</p>
-        <div class="who">
-          <div class="avatar" aria-hidden="true"></div>
-          <div>
-            <strong>Jamie R.</strong><br/>
-            <span class="muted">Wellness enthusiast</span>
-          </div>
-        </div>
-      </article>
-      <article class="review" aria-label="Testimonial from Devin S.">
-        <p>"The only regimen that's been both gentle and effective for stubborn nail concerns. Highly recommend giving it a try."</p>
-        <div class="who">
-          <div class="avatar" aria-hidden="true"></div>
-          <div>
-            <strong>Devin S.</strong><br/>
-            <span class="muted">Verified buyer</span>
-          </div>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- Blog placeholder -->
-  <section class="section" id="blog">
+<!-- ── Blog Teaser ── -->
+<section class="section">
+  <div class="section-center">
     <h2>From the Blog</h2>
-    <p class="muted">Tips on nail care, skin wellness, and routine consistency. Articles coming soon.</p>
-  </section>
+    <p class="section-sub">Deep-dives, comparisons, and buying guides to help you make smarter health decisions.</p>
+    <a href="blog/index.html" style="display:inline-block;border:2px solid var(--primary);color:var(--primary);font-weight:700;border-radius:10px;padding:10px 22px">Browse All Articles →</a>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer id="contact" role="contentinfo">
-    <div class="foot">
-      <div>
-        <strong>Care Essentials</strong>
-        <p class="copy">© 2025 Care Essentials. All rights reserved.</p>
-        <p class="copy">Contact: <a href="mailto:careessentials@4ourmedia.com">careessentials@4ourmedia.com</a></p>
-      </div>
-      <div>
-        <a href="privacy.html">Privacy Policy</a> | 
-        <a href="#">Terms</a>
-      </div>
+<!-- ── FTC Affiliate Disclaimer ── -->
+<div class="disclaimer" style="margin-bottom:0">
+  <strong>⚠️ Affiliate Disclosure:</strong> Care Essentials participates in affiliate programs including ClickBank. If you purchase a product through links on this site, we may earn a commission at no extra cost to you. This helps keep our research free. All opinions are our own. See our full <a href="disclaimer.html" style="color:#78611b;text-decoration:underline">Affiliate Disclaimer</a>.
+</div>
+
+<!-- ── Footer ── -->
+<footer role="contentinfo">
+  <div class="foot-inner">
+    <div>
+      <div class="foot-brand">⬤ Care Essentials</div>
+      <p class="foot-copy">Honest, independent reviews of health and wellness products. We help real people make smarter buying decisions.</p>
+      <p class="foot-copy">Contact: <a href="mailto:careessentials@4ourmedia.com" style="color:#9fd1cd">careessentials@4ourmedia.com</a></p>
+      <p class="foot-copy" style="margin-top:12px">© 2026 Care Essentials. All rights reserved.</p>
     </div>
-  </footer>
+    <div class="foot-col">
+      <h4>Reviews</h4>
+      <a href="reviews/mitolyn-review.html">Mitolyn Review</a>
+      <a href="reviews/prodentim-review.html">ProDentim Review</a>
+      <a href="reviews/brain-song-review.html">Brain Song Review</a>
+      <a href="reviews/genius-switch-review.html">Genius Switch Review</a>
+      <a href="reviews/energy-revolution-system-review.html">Energy Revolution Review</a>
+      <a href="reviews/prostavive-review.html">ProstaVive Review</a>
+      <a href="reviews/rocket-languages-review.html">Rocket Languages Review</a>
+      <a href="reviews/teds-woodworking-review.html">Ted's Woodworking Review</a>
+      <a href="reviews/smoothie-diet-review.html">Smoothie Diet Review</a>
+      <a href="reviews/audifort-review.html">Audifort Review</a>
+    </div>
+    <div class="foot-col">
+      <h4>Site</h4>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="blog/index.html">Blog</a>
+      <a href="reviews/index.html">All Reviews</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="disclaimer.html">Affiliate Disclaimer</a>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2026 Care Essentials — careessentials.4ourmedia.com</span>
+    <div style="display:flex;gap:16px">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="disclaimer.html">Disclaimer</a>
+      <a href="about.html">About</a>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
